@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clavier dynamique</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="controle.js"></script>
+</head>
+<body onload="afficher()">
+    <p style="text-align:center" id="affichage">
+
+    </p>
+    <div class="parent">
+        <div class="g-zone">
+            <div class="zone">
+                <input type="text"  readonly id="afficher">
+            </div>
+            <div class="container">
+                <div class="fe">
+                    <div class="echap"><p>échap</p></div>
+                    <div class="muet"> <p> &#x1F507; </p></div>
+                    <div class="baisse"><p>&#x1F50A;</p></div>
+                    <div class="pause"><p>&#x23F8;</p></div>
+                    <div class="f5"><p>f5</p></div>
+                    <div class="luminosite"><p>&#x1F31E;</p></div>
+                    <div class="f8"><p>f8</p></div>
+                    <div class="f9"><p>f9</p></div>
+                    <div class="impr"><p>imprécran</p></div>
+                    <div class="fleche"><p>&#x1F53C;</p></div>
+                    <div class="fin"><p>fin</p></div>
+                    <div class="insert"><p>insert</p></div>
+                    <div class="suppr"><p>suppr</p></div>
+                    <div class="calcu"><p>&#x1F507;</p></div>
+                    <div class="ce"><p>CE</p></div>
+                    <div class="plus"><p>+/-</p></div>
+                    <div class="etindre"><p>&#10060;</p></div>
+
+                </div>
+                <div class="pre">
+                    <div class="a" onclick="ecrire('a')"><p >a</p></div>
+                    <div class="b" onclick="ecrire('b')"><p >b</p></div>
+                    <div class="c" onclick="ecrire('c')"><p >c</p></div>
+                    <div class="d" onclick="ecrire('d')"><p >d</p></div>
+                    <div class="e" onclick="ecrire('e')"><p >e</p></div>
+                    <div class="f" onclick="ecrire('f')"><p >f</p></div>
+                    <div class="g" onclick="ecrire('g')"><p >g</p></div>
+                    <div class="h" onclick="ecrire('h')"><p >h</p></div>
+                    <div class="i" onclick="ecrire('i')"><p >i</p></div>
+                    <div class="j" onclick="ecrire('j')"><p >j</p></div>
+                    <div class="k" onclick="ecrire('k')"><p >k</p></div>
+                    <div class="l" onclick="ecrire('l')"><p >l</p></div>
+                    <div class="m" onclick="ecrire('m')"><p >m</p></div>
+                </div>
+                <div class="deux">
+                    <div class="n" onclick="ecrire('n')"><p >n</p></div>
+                    <div class="o" onclick="ecrire('o')"><p >o</p></div>
+                    <div class="p" onclick="ecrire('p')"><p >p</p></div>
+                    <div class="q" onclick="ecrire('q')"><p >q</p></div>
+                    <div class="r" onclick="ecrire('r')"><p >r</p></div>
+                    <div class="s" onclick="ecrire('s')"><p >s</p></div>
+                    <div class="t" onclick="ecrire('t')"><p >t</p></div>
+                    <div class="u" onclick="ecrire('u')"><p >u</p></div>
+                    <div class="v" onclick="ecrire('v')"><p >v</p></div>
+                    <div class="w" onclick="ecrire('w')"><p >w</p></div>
+                    <div class="x" onclick="ecrire('x')"><p >x</p></div>
+                    <div class="y" onclick="ecrire('y')"><p >y</p></div>
+                    <div class="z" onclick="ecrire('z')"><p >z</p></div>
+                </div>
+                <div class="trois">
+                    <div class="confirmer" onclick="confirmer()">
+                        <p>confirmer</p>
+                    </div>
+                    <div class="espace" onclick="ecrire(' ')">
+                        <p>    </p>
+                    </div>
+                    <div class="effacer" onclick="effacer()">
+                        <p>effacer</p>
+                    </div>
+
+                </div>
+
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
